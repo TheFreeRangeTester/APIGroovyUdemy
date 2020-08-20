@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "backgroundImage": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "pdf": {
+            "type": "string"
+          },
+          "book_id": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "_id",
+          "backgroundImage",
+          "author",
+          "category",
+          "url",
+          "title",
+          "body",
+          "pdf",
+          "book_id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "success",
+    "data"
+  ]
+}

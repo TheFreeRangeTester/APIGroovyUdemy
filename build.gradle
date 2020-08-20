@@ -1,0 +1,29 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'RestAssured-Groovy'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:3.0.2'
+    testImplementation 'io.rest-assured:rest-assured:4.3.1'
+    compile 'io.rest-assured:json-schema-validator:3.0.3'
+    testCompile group: 'org.testng', name: 'testng', version: '7.3.0'
+}
+
+test {
+    useTestNG() {
+        testLogging.showStandardStreams = true
+        useDefaultListeners = true
+        reports.html.enabled = false
+        parallel="tests"
+    }
+}
