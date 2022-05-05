@@ -1,5 +1,5 @@
-# Groovy-RestAssured-TestNG-API-Example
-A small simple API automation project built with Groovy, RestAssured, TestNG for testing an imperfect qa library api
+# Groovy-RestAssured-TestNG-API
+API Automation con Groovy y Rest Assured. 
 
 ## Test scripts
 
